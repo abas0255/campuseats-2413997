@@ -5,15 +5,13 @@ function MenuItemCard({ item, onAdd }) {
         {item.name.charAt(0)}
       </div>
 
-      <p className="tag">
-        {item.category}
-      </p>
+      {item.popular && (
+        <p className="tag popular-tag">Popular</p>
+      )}
+
+      <p className="tag">{item.category}</p>
 
       <h3>{item.name}</h3>
-
-      <p className="muted">
-        {item.description}
-      </p>
 
       <p className="price">
         RM {item.price.toFixed(2)}
