@@ -1,0 +1,116 @@
+[
+  {
+    "id": "2413997-my-cafe",
+    "name": "Chowder Fed",
+    "location": "Mahallah Bilal Entrance",
+    "openHours": "7:00 am - 10:30 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "2413997-m1",
+        "name": "Mi Tarik",
+        "price": 7.5,
+        "category": "Noodles",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2413997-m2",
+        "name": "Shawarma",
+        "price": 6.5,
+        "category": "Wraps",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2413997-m3",
+        "name": "Teh Tarik",
+        "price": 2.5,
+        "category": "Drinks",
+        "available": true,
+        "popular": true
+      },
+      {
+        "id": "2413997-m4",
+        "name": "Nasi Goreng",
+        "price": 6.5,
+        "category": "Rice",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2413997-m5",
+        "name": "Mee Goreng",
+        "price": 7,
+        "category": "Noodles",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2413997-m6",
+        "name": "Milo Ais",
+        "price": 3.0,
+        "category": "Drinks",
+        "available": true,
+        "popular": false
+      },
+      {
+        "id": "2413997-m7",
+        "name": "Nasi Lemak",
+        "price": 5.0,
+        "category": "Rice",
+        "available": true,
+        "popular": true
+      }
+    ]
+  },
+ {
+    "id": "2419671-Thousand-Sunny",
+    "name": "Thousand Sunny",
+    "location": "Mahallah Faruq",
+    "openHours": "8:00 am - 10:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+    "id": "2419671-m1", "name": "Nasi Kandaq", "price": 6, "category": "Rice", "available": true},
+    {"id": "2419671-m2", "name": "Mee Kolok", "price": 6, "category": "Noodles","available": true},
+    {"id": "2419671-m3", "name": "Sky Juice", "price": 0.3,"category": "Drinks","available": true},
+    {"id": "2419671-m4", "name": "Nasi Lemak","price": 5.5, "category": "Rice","available": true},
+    {"id": "2419671-m5","name": "Laksa Penang","price": 7,"category": "Noodles","available": true},
+    {"id": "2419671-m6","name": "Nasi Kerabu","price": 7.5,"category": "Rice","available": true},
+    {"id": "2419671-m7","name": "Teh Tarik","price": 2.5,"category": "Drinks","available": true},
+    {"id": "2419671-m8","name": "Cendol","price": 4,"category": "Desserts","available": false}
+    ]
+  },
+ {
+  "id": "2419091-Mee-Tarik",
+  "name": "Mee Tarik Nyawa",
+  "location": "Kafe Mahallah Siddiq",
+  "openHours": "8:00 am - 10:00 pm",
+  "isOpen": true,
+  "menu": [
+    { "id": "2419091-m1", "name": "Lanzhou Beef Mee Tarik", "price": 12, "category": "Noodles", "popular": true },
+    { "id": "2419091-m2", "name": "Spicy Beef Mee Tarik", "price": 13, "category": "Noodles", "popular": true },
+    { "id": "2419091-m3", "name": "Chicken Mee Tarik", "price": 10, "category": "Noodles", "popular": true },
+    { "id": "2419091-m4", "name": "Fried Mee Tarik", "price": 11, "category": "Noodles", "popular": false },
+    { "id": "2419091-m5", "name": "Beef Soup Noodles", "price": 12, "category": "Noodles", "popular": true },
+    { "id": "2419091-m6", "name": "Dumpling Noodle Soup", "price": 12, "category": "Noodles", "popular": false },
+    { "id": "2419091-m7", "name": "Beef Fried Rice", "price": 10, "category": "Rice", "popular": true },
+    { "id": "2419091-m8", "name": "Chicken Fried Rice", "price": 9, "category": "Rice", "popular": false },
+    { "id": "2419091-m9", "name": "Beef Dumplings", "price": 8, "category": "Sides", "popular": true },
+    { "id": "2419091-m10", "name": "Chicken Dumplings", "price": 7, "category": "Sides", "popular": true },
+    { "id": "2419091-m11", "name": "Spring Rolls", "price": 5, "category": "Sides", "popular": false },
+    { "id": "2419091-m12", "name": "Fried Chicken", "price": 7, "category": "Sides", "popular": false },
+    { "id": "2419091-m13", "name": "Iced Lemon Tea", "price": 3, "category": "Drinks", "popular": true },
+    { "id": "2419091-m14", "name": "Iced Milo", "price": 3.5, "category": "Drinks", "popular": true },
+    { "id": "2419091-m15", "name": "Iced Teh Tarik", "price": 3, "category": "Drinks", "popular": true },
+    { "id": "2419091-m16", "name": "Iced Honey Lemon", "price": 3.5, "category": "Drinks", "popular": false },
+    { "id": "2419091-m17", "name": "Iced Green Tea", "price": 3, "category": "Drinks", "popular": false },
+    { "id": "2419091-m18", "name": "Iced Peach Tea", "price": 3.5, "category": "Drinks", "popular": false },
+    { "id": "2419091-m19", "name": "Orange Juice", "price": 4, "category": "Drinks", "popular": true },
+    { "id": "2419091-m20", "name": "Watermelon Juice", "price": 4, "category": "Drinks", "popular": false },
+    { "id": "2419091-m21", "name": "Iced Chocolate", "price": 4, "category": "Drinks", "popular": true },
+    { "id": "2419091-m22", "name": "Mineral Water", "price": 1.5, "category": "Drinks", "popular": false }
+  ]
+}
+]

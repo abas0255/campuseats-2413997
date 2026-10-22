@@ -1,16 +1,53 @@
-# React + Vite
+CampusEats
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CampusEats is a simple food ordering website made using React. Students can view cafe menus, add food to their cart, change quantities, add order notes and place an order by filling in their details.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* View cafés and their menus.
+* Add items to the cart.
+* Increase or decrease item quantities.
+* Remove items from the cart.
+* Add notes to food orders.
+* Calculate the total price.
+* Fill in checkout details.
+* Validate the checkout form.
+* View order confirmation after placing an order.
 
-## React Compiler
+Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* CSS
+* JSON
 
-## Expanding the ESLint configuration
+Vendor Credits
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* My Cafe: My own café for this lab. Matric number: 2413997.
+* Friend 1 Cafe: Thousand-Sunny. Matric number: 2419671
+* Friend 2 Cafe: Dummy café data for testing. Matric number: [Friend 2’s matric number].
+
+The two dummy cafés will be updated with my classmates’ actual vendor data.
+
+How to Run
+
+1. Install the dependencies:
+
+npm install
+
+2. Start the application:
+
+npm run dev
+
+3. Open the local URL shown in the terminal.
+
+Vendor Data
+
+The café and menu information is stored in public/api/vendors.json. The application fetches the data from this file.
+
+Course Information
+
+* Course: BICS 3301
+* Lab: Lab 3 — Forms, Lifted State and Effects
+* Matric Number: 2413997
