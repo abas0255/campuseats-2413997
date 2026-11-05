@@ -1,4 +1,4 @@
-Vendor Credits
+## Vendor Credits
 
 * Chowder Fed: My own café. Matric number: 2413997.
 * Thousand Sunny: Matric number: 2419671.

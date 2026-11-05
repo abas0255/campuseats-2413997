@@ -50,6 +50,11 @@ function CheckoutForm({ onPlaceOrder }) {
       ...previous,
       [name]: value,
     }))
+
+    setErrors((previous) => ({
+      ...previous,
+      [name]: '',
+    }))
   }
 
   function handleSubmit(event) {
@@ -75,6 +80,7 @@ function CheckoutForm({ onPlaceOrder }) {
       <input
         id="name"
         name="name"
+        type="text"
         value={values.name}
         onChange={handleChange}
       />
