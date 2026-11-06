@@ -16,3 +16,9 @@
 * What I asked for: Help with fetching vendors, cart, checkout and order notes.
 * What I kept, changed or rejected, and why: I used the suggested code and changed the vendor data to include my cafe and two friends cafes.
 * One thing the AI got wrong and how I fixed it: The matric numbers were placeholders, so I replaced mine with my actual matric number.
+
+## Week 4
+* Tool(s): ChatGPT
+* What I asked for: Help fixing problems with React Router, page navigation and components that were not displaying correctly.
+* What I kept, changed or rejected, and why: I used the explanations and suggestions to understand the errors and make changes to my existing code.
+* One thing the AI got wrong and how I fixed it: Some suggested imports did not work with my project setup, so I checked the package and corrected the imports.

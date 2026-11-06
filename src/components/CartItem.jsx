@@ -1,5 +1,5 @@
-function CartItem({ line, onChangeQty, onRemove }) {
-  const { item, qty } = line
+function CartItem({ line, onChangeQty, onRemove, onChangeNote }) {
+  const { item, qty, note } = line
 
   return (
     <li className="cart-line">
@@ -9,6 +9,18 @@ function CartItem({ line, onChangeQty, onRemove }) {
         <p className="muted">
           RM {item.price.toFixed(2)} each
         </p>
+
+        <label>
+          Order note:
+          <input
+            type="text"
+            value={note || ''}
+            placeholder="e.g. Less spicy, no onions"
+            onChange={(e) =>
+              onChangeNote(item.id, e.target.value)
+            }
+          />
+        </label>
       </div>
 
       <div className="qty">
