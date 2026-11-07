@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 
-// Hides the Week 3 fetch / loading / error logic behind one call.
 export function useVendors() {
   const [vendors, setVendors] = useState([])
   const [loading, setLoading] = useState(true)
