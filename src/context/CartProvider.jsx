@@ -81,16 +81,7 @@ export function CartProvider({ children }) {
     0
   )
 
-  const value = {
-    cart,
-    orders,
-    count,
-    total,
-    addToCart,
-    changeQty,
-    changeNote,
-    removeFromCart,
-    placeOrder,
+  const value = {cart,orders,count,total,addToCart,changeQty,changeNote,removeFromCart,placeOrder,
   }
 
   return (

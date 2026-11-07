@@ -1,4 +1,4 @@
-## Week 1 Reflection
+## Reflection
 
 1. What is the difference between building a UI imperatively (plain DOM code) and declaratively (React)?
 

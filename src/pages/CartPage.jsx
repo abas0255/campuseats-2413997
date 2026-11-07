@@ -4,14 +4,7 @@ import CartItem from '../components/CartItem.jsx'
 import CheckoutForm from '../components/CheckoutForm.jsx'
 
 function CartPage() {
-  const {
-    cart,
-    total,
-    changeQty,
-    changeNote,
-    removeFromCart,
-    placeOrder,
-  } = useCart()
+  const {cart,total,changeQty,changeNote,removeFromCart,placeOrder} = useCart()
 
   const navigate = useNavigate()
 
