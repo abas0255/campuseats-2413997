@@ -23,7 +23,7 @@
 * What I kept, changed or rejected, and why: I used the explanations and suggestions to understand the errors and make changes to my existing code.
 * One thing the AI got wrong and how I fixed it: Some suggested imports did not work with my project setup, so I checked the package and corrected the imports.
 
-Week 5
+## Week 5
 
 * Tool(s): ChatGPT
 * What I asked for: Help setting up Firebase login and registration and making sure each user has their own cart and orders.
