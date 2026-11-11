@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router'
 import { useVendors } from '../hooks/useVendors.js'
 import MenuList from '../components/MenuList.jsx'
 import { Loading, ErrorMessage } from '../components/Status.jsx'
+
 function VendorPage() {
   const { id } = useParams()
   const { vendors, loading, error, reload } = useVendors()

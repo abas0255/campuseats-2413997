@@ -1,13 +1,7 @@
 import CartItem from './CartItem.jsx'
 import CheckoutForm from './CheckoutForm.jsx'
 
-function CartPage({
-  cart,
-  onChangeQty,
-  onRemove,
-  onChangeNote,
-  onPlaceOrder,
-}) {
+function CartPage({cart,onChangeQty, onRemove,onChangeNote,onPlaceOrder,}) {
   if (cart.length === 0) {
     return (
       <section className="card">
