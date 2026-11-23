@@ -7,7 +7,6 @@ export function CartProvider({ children }) {
   const userId = user?.uid || 'guest'
 
   const [cart, setCart] = useState([])
-  const [orders, setOrders] = useState([])
   const [notes, setNotes] = useState({})
   const [loadedUserId, setLoadedUserId] = useState(null)
 
@@ -16,15 +15,12 @@ export function CartProvider({ children }) {
 
     try {
       const savedCart = localStorage.getItem(`campuseats-cart-${userId}`)
-      const savedOrders = localStorage.getItem(`campuseats-orders-${userId}`)
       const savedNotes = localStorage.getItem(`ce-notes-${userId}`)
 
       setCart(savedCart ? JSON.parse(savedCart) : [])
-      setOrders(savedOrders ? JSON.parse(savedOrders) : [])
       setNotes(savedNotes ? JSON.parse(savedNotes) : {})
     } catch {
       setCart([])
-      setOrders([])
       setNotes({})
     }
 
@@ -36,12 +32,6 @@ export function CartProvider({ children }) {
 
     localStorage.setItem(`campuseats-cart-${userId}`, JSON.stringify(cart))
   }, [cart, userId, loadedUserId])
-
-  useEffect(() => {
-    if (loadedUserId !== userId) return
-
-    localStorage.setItem(`campuseats-orders-${userId}`, JSON.stringify(orders))
-  }, [orders, userId, loadedUserId])
 
   useEffect(() => {
     if (loadedUserId !== userId) return
@@ -90,28 +80,15 @@ export function CartProvider({ children }) {
     })
   }
 
-  function placeOrder(details) {
-    if (cart.length === 0) return null
-
-    const order = {
-      id: `ord-${Date.now()}`,
-      createdAt: new Date().toISOString(),
-      ...details,
-      lines: cart.map((line) => ({ ...line, note: notes[line.item.id] || '' })),
-      total: cart.reduce((sum, line) => sum + line.item.price * line.qty, 0),
-    }
-
-    setOrders((prev) => [order, ...prev])
+  function clearCart() {
     setCart([])
     setNotes({})
-
-    return order
   }
 
   const count = cart.reduce((sum, line) => sum + line.qty, 0)
   const total = cart.reduce((sum, line) => sum + line.item.price * line.qty, 0)
 
-  const value = { cart, orders, notes, count, total, addToCart, changeQty, changeNote, removeFromCart, placeOrder }
+  const value = { cart, notes, count, total, addToCart, changeQty, changeNote, removeFromCart, clearCart }
 
   if (loading || loadedUserId !== userId) return null
 

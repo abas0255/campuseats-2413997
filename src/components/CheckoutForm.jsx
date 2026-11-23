@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const MAHALLAHS = ['Ali','Aminah','Faruq','Asiah','Bilal','Hafsa','Uthman','Zubair',]
+const MAHALLAHS = ['Ali', 'Aminah', 'Faruq', 'Asiah', 'Bilal', 'Hafsa', 'Uthman', 'Zubair']
 
 function validate(values) {
   const errors = {}
@@ -13,21 +13,16 @@ function validate(values) {
     errors.mahallah = 'Please select your mahallah.'
   }
 
-  if (
-    !values.pickupTime ||
-    values.pickupTime < '07:00' ||
-    values.pickupTime > '22:00'
-  ) {
-    errors.pickupTime =
-      'Choose a pickup time between 07:00 and 22:00.'
+  if (!values.pickupTime || values.pickupTime < '07:00' || values.pickupTime > '22:00') {
+    errors.pickupTime = 'Choose a pickup time between 07:00 and 22:00.'
   }
 
   return errors
 }
 
-function CheckoutForm({ onPlaceOrder }) {
+function CheckoutForm({ defaultName = '', onPlaceOrder }) {
   const [values, setValues] = useState({
-    name: '',
+    name: defaultName,
     mahallah: '',
     pickupTime: '',
   })
@@ -60,58 +55,27 @@ function CheckoutForm({ onPlaceOrder }) {
   }
 
   return (
-    <form
-      className="card form"
-      onSubmit={handleSubmit}
-      noValidate
-    >
+    <form className="card form" onSubmit={handleSubmit} noValidate>
       <h3>Checkout</h3>
 
       <label htmlFor="name">Name</label>
-      <input
-        id="name"
-        name="name"
-        type="text"
-        value={values.name}
-        onChange={handleChange}
-      />
-      {errors.name && (
-        <p className="field-error">{errors.name}</p>
-      )}
+      <input id="name" name="name" type="text" value={values.name} onChange={handleChange} />
+      {errors.name && <p className="field-error">{errors.name}</p>}
 
       <label htmlFor="mahallah">Mahallah</label>
-      <select
-        id="mahallah"
-        name="mahallah"
-        value={values.mahallah}
-        onChange={handleChange}
-      >
+      <select id="mahallah" name="mahallah" value={values.mahallah} onChange={handleChange}>
         <option value="">Select...</option>
         {MAHALLAHS.map((mahallah) => (
-          <option key={mahallah} value={mahallah}>
-            {mahallah}
-          </option>
+          <option key={mahallah} value={mahallah}>{mahallah}</option>
         ))}
       </select>
-      {errors.mahallah && (
-        <p className="field-error">{errors.mahallah}</p>
-      )}
+      {errors.mahallah && <p className="field-error">{errors.mahallah}</p>}
 
       <label htmlFor="pickupTime">Pickup time</label>
-      <input
-        id="pickupTime"
-        name="pickupTime"
-        type="time"
-        value={values.pickupTime}
-        onChange={handleChange}
-      />
-      {errors.pickupTime && (
-        <p className="field-error">{errors.pickupTime}</p>
-      )}
+      <input id="pickupTime" name="pickupTime" type="time" value={values.pickupTime} onChange={handleChange} />
+      {errors.pickupTime && <p className="field-error">{errors.pickupTime}</p>}
 
-      <button type="submit" className="btn">
-        Place order
-      </button>
+      <button type="submit" className="btn">Place order</button>
     </form>
   )
 }
