@@ -29,3 +29,10 @@
 * What I asked for: Help setting up Firebase login and registration and making sure each user has their own cart and orders.
 * What I kept, changed or rejected, and why: I followed the suggested steps and adjusted some parts to fit my existing CampusEats project.
 * One thing the AI got wrong and how I fixed it: The cart and orders were shared between users at first. I changed the localStorage keys to separate the data for each user.
+
+## Week 6
+
+* Tool(s): ChatGPT
+* What I asked for: Help understanding how to locate order documents in Firebase Firestore and how to update an order status.
+* What I kept, changed or rejected, and why: I followed the instructions to navigate the Firestore Console and update the status field. This helped me understand how to manage and check data directly in Firestore.
+* One thing the AI got wrong and how I fixed it: The initial instructions were a little unclear about which collection to open. I checked the Firestore database structure and located the correct orders collection.
